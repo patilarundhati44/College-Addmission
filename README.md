@@ -14,10 +14,12 @@
 ## Project Structure (in this repo)
 
 ```
+
 College-Addmission/
 ├─ college-admission-backend/   # Spring Boot backend (Java, Maven, JPA/Hibernate)
 ├─ college-admission-frontend/  # Angular frontend (or React if used). Here we assume Angular.
 └─ README.md (this file)
+
 ```
 
 ---
@@ -36,7 +38,8 @@ College-Addmission/
 
 ---
 
-# Backend (Spring Boot)
+# 🚀 Backend (Spring Boot)
+
 
 ### Prerequisites
 
@@ -45,6 +48,8 @@ College-Addmission/
 * PostgreSQL (or H2 for testing)
 
 ---
+
+
 ### ⚡ Database Configuration 
 
 ```
@@ -57,7 +62,9 @@ server.port=8096
 ```
 ---
 
+
 ###  ▶️ Build & Run
+
 
 From repository root or backend folder:
 
@@ -69,10 +76,13 @@ java -jar target/*.jar
 # OR run directly with maven
 mvn spring-boot:run
 ```
+
+
 ---
 
 
 ### ⚙️ Important Backend Files to Check
+
 
 * `src/main/java/.../entity/Student.java` — Student entity mapping
 * `src/main/java/.../repository/StudentRepository.java` — JPA repository
@@ -80,7 +90,9 @@ mvn spring-boot:run
 * `src/main/java/.../controller/StudentController.java` — REST endpoints
 * `src/main/resources/application.properties` — DB & server config
 
+
 ---
+
 
 ### ⚙️ Common Backend Endpoints
 
@@ -90,9 +102,11 @@ mvn spring-boot:run
 * `PUT  /api/students/{id}` — update
 * `DELETE /api/students/{id}` — delete
 
+
 ---
 
 # Frontend (Angular)
+
 
 ### ✅ Prerequisites
 
@@ -152,17 +166,26 @@ curl -X POST http://localhost:8096/api/students \
  -d '{"firstName":"Arundati","lastName":"Patil","email":"arundati@example.com","course":"IT"}'
 ```
 
----
 
 ---
 
 ## 📸 Project Screenshots  
 
+
 ### 🔹 Backend (Spring Boot)  
+
+
 ![Backend Screenshot](./screenshots/backend.png)  
 
+
+---
+
+
 ### 🔹 Frontend (Angular)  
+
+
 ![Frontend Screenshot](./screenshots/frontend.png)  
+
 
 ---
 
